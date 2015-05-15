@@ -1,0 +1,50 @@
+##########################################################################
+######                   SVN TO GIT MIGRATION SCRIPT                ######
+######                   Author: HP                                 ######
+######                   Date: May 11, 2015                         ######
+##########################################################################
+Creating local directory for test1.
+Directory created.
+Executing svn2git command...
+Initialized empty Git repository in C:/LocalGit/test1/.git/
+r1 = 65205bc410dcde8798173950f65de04ca750e3ae (refs/remotes/svn/trunk)
+Checked out HEAD:
+  http://svn.arise.pfizer.com/svn/test1/trunk r1
+Pointing local git origin to github...
+Pushing local data to github...
+test1 migration completed!
+Creating local directory for test2.
+Directory created.
+Executing svn2git command...
+Initialized empty Git repository in C:/LocalGit/test2/.git/
+r1 = f8d717656163dfae6935989bdf1ffdc47dcc5bf5 (refs/remotes/svn/trunk)
+Checked out HEAD:
+  http://svn.arise.pfizer.com/svn/test2/trunk r1
+Pointing local git origin to github...
+Pushing local data to github...
+test2 migration completed!
+
+C:\LocalGit\test2>(
+cd C:\LocalGit  
+ echo Creating local directory for test3.  
+ mkdir test3  
+ echo Directory created.  
+ cd test3  
+ echo Executing svn2git command...  
+ svn2git http://svn.arise.pfizer.com/svn/test3/  
+ echo Pointing local git origin to github...  
+ git remote add origin git@github.com:sweird/test3.git  
+ echo Pushing local data to github...  
+ git push --all  
+ echo test3 migration completed! 
+) 
+Creating local directory for test3.
+Directory created.
+Executing svn2git command...
+Initialized empty Git repository in C:/LocalGit/test3/.git/
+r1 = 8a880dd90a2f3a20a811997f3a91be38afbc0cf3 (refs/remotes/svn/trunk)
+Checked out HEAD:
+  http://svn.arise.pfizer.com/svn/test3/trunk r1
+Pointing local git origin to github...
+Pushing local data to github...
+test3 migration completed!
